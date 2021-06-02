@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="port">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Erlang</title>
+    <script src="script.js"></script>
+</head>
+<body>
+            <div class="titulopagina2"><h1>Vamos calcular?</h1></div>
+            <input class="entrada" id="chamadas" type="number" title="Total de Chamadas" value="100"><div class="textoinput"><p>- Digite um número <b>inteiro</b>, para definir o total de chamadas que entrarão no intervalo (Forecast).</p></div><br>
+            <input class="entrada" id="intervaloemminutos" type="number" title="Intervalo em minutos" value="30"><div class="textoinput"><p>- Digite um número <b>inteiro</b>, para definir um Intervalo, que será calculado em <b>minutos</b>.</p></div><br>
+            <input class="entrada" id="tmasegundos" type="number" title="Tempo médio de manuseio" value="180"> <div class="textoinput"><p>-  Digite um número <b>inteiro</b>, para definir o Tempo Médio de Manuseio, que será calculado em <b>segundos</b>.</p></div><br>
+            <input class="entrada" id="ns" type="number" title="Nível de Serviço" value="80"><div class="textoinput"><p>- Digite um número <b>inteiro</b>, para definir o Nível de Serviço desejado, que será calculado em <b>percentual</b>.</p></div><br>
+            <input class="entrada" id="respostaalvosegundos" type="number" title="Tempo de resposta" value="20"><div class="textoinput"><p>- Digite um número <b>inteiro</b>, para definir o Tempo de resposta aceitavel, que será calculado em <b>segundos</b>.</p></div><br>
+            <input class="entrada" id="retracao" type="number" title="Encolhimento (Improdutividade)" value="30"><div class="textoinput"><p>- Digite um número <b>inteiro</b>, para definir o Encolhimento, que será calculado em <b>percentual</b>.</p></div>
+            <input class="entrada" id="ocupacao" type="hidden" title="Ocupação" value="85">
+            <button class="btenviar" type="button" onclick="soma()">Calcular</button>
+
+<div id="resultado"></div>
+</body>
+</html>
